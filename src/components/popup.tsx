@@ -1,19 +1,25 @@
-import React from "react";
+import React, { Dispatch, SetStateAction } from "react";
 import "../styles/Popup.css";
 
 interface PopupProps {
   isVisible: boolean;
-  onClose: () => void;
+  onClose: Dispatch<SetStateAction<boolean>>;
   children: React.ReactNode;
 }
 
 const Popup: React.FC<PopupProps> = ({ isVisible, onClose, children }) => {
+  const handleOutsideClick = (event: React.MouseEvent<HTMLDivElement>) => {
+    if (event.target === event.currentTarget) {
+      onClose(false);
+    }
+  };
+
   if (!isVisible) return null;
 
   return (
-    <div className="popup__overlay">
+    <div className="popup__overlay" onClick={handleOutsideClick}>
       <div className="popup__content">
-        <button className="popup__close" onClick={onClose}>
+        <button className="popup__close" onClick={() => onClose(false)}>
           X
         </button>
         {children}

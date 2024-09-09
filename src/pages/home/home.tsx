@@ -6,8 +6,10 @@ import scooters from "../../assets/home-images/scooters.png";
 import banner from "../../assets/home-images/banner.png";
 import Card from "../../components/card";
 import ContactForm from "../../components/homepage-utils/contact-form";
+import Popup from "../../components/popup";
 
 const Home: React.FC = () => {
+  const [popupVisible, setPopupVisible] = React.useState(false);
   return (
     <div className="home">
       <ProductsSlider />
@@ -52,7 +54,7 @@ const Home: React.FC = () => {
         <Card
           title="Some boring text, good for SEO"
           buttonText="DO SOMETHING"
-          onButtonClick={() => alert("Button clicked!")}
+          onButtonClick={() => setPopupVisible(true)}
         >
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
@@ -100,7 +102,7 @@ const Home: React.FC = () => {
         <Card
           title="Some more boring text, also good for SEO"
           buttonText="DO SOMETHING"
-          onButtonClick={() => alert("Button clicked!")}
+          onButtonClick={() => setPopupVisible(true)}
         >
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
@@ -114,6 +116,41 @@ const Home: React.FC = () => {
         </Card>
       </div>
       <ContactForm />
+      <Popup isVisible={popupVisible} onClose={setPopupVisible}>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
+          consectetur aliquam urna. Pellentesque et ullamcorper ipsum. Morbi
+          eget hendrerit purus, in tempor lectus. Curabitur lorem magna,
+          efficitur et molestie ut, rutrum in nisi. Sed lobortis sapien sit amet
+          tempus commodo. Phasellus nec libero laoreet, finibus libero rhoncus,
+          pellentesque elit. Mauris facilisis commodo justo, eget venenatis erat
+          suscipit nec. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          Morbi consectetur aliquam urna. Pellentesque et ullamcorper ipsum.
+          Morbi eget hendrerit purus, in tempor lectus. Curabitur lorem magna,
+          efficitur et molestie ut, rutrum in nisi. Sed lobortis sapien sit amet
+          tempus commodo. Phasellus nec libero laoreet, finibus libero rhoncus,
+          pellentesque elit. Mauris facilisis commodo justo, eget venenatis erat
+          suscipit nec. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          Morbi consectetur aliquam urna. Pellentesque et ullamcorper ipsum.
+          Morbi eget hendrerit purus, in tempor lectus. Curabitur lorem magna,
+          efficitur et molestie ut, rutrum in nisi. Sed lobortis sapien sit amet
+          tempus commodo. Phasellus nec libero laoreet, finibus libero rhoncus.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
+          consectetur aliquam urna. Pellentesque et ullamcorper ipsum. Morbi
+          eget hendrerit purus, in tempor lectus. Curabitur lorem magna,
+          efficitur et molestie ut, rutrum in nisi. Sed lobortis sapien sit amet
+          tempus commodo. Phasellus nec libero laoreet, finibus libero rhoncus,
+          pellentesque elit. Mauris facilisis commodo justo, eget venenatis erat
+          suscipit nec. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          Morbi consectetur aliquam urna. Pellentesque et ullamcorper ipsum.
+          Morbi eget hendrerit purus, in tempor lectus. Curabitur lorem magna,
+          efficitur et molestie ut, rutrum in nisi. Sed lobortis sapien sit amet
+          tempus commodo. Phasellus nec libero laoreet, finibus libero rhoncus,
+          pellentesque elit.{" "}
+        </p>
+      </Popup>
     </div>
   );
 };

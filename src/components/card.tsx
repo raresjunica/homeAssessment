@@ -19,11 +19,7 @@ const Card: React.FC<CardProps> = ({
     <div className="card">
       <h2 className="card__title">{title}</h2>
       <div className="card__content">{children}</div>
-      <Button
-        label={buttonText}
-        onClick={() => onButtonClick}
-        variant="primary"
-      />
+      <Button label={buttonText} onClick={onButtonClick} variant="primary" />
     </div>
   );
 };
