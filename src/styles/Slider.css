@@ -40,6 +40,7 @@
 .slider__overlay h2 {
   font-size: 3.5vw;
   margin: 0 0 0.5rem 0;
+  color: white;
 }
 
 .slider__overlay p {
