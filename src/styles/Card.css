@@ -1,0 +1,51 @@
+/* Mobile screens */
+.card {
+  background-color: #ecf0f1;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 100%;
+  margin: 0;
+  padding-bottom: 1rem;
+  margin-bottom: 2rem;
+}
+
+.card__title {
+  color: #27ae60;
+  font-size: 1.5rem;
+  padding-top: 2rem;
+  margin-bottom: 0rem;
+}
+
+.card__content {
+  color: #333;
+  margin-bottom: 1.5rem;
+  line-height: 1.5;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.card__content p {
+  font-size: 0.6rem;
+  margin-bottom: 1rem;
+}
+
+.card__content b {
+  font-weight: 600;
+}
+
+/* Larger screens */
+@media (min-width: 768px) {
+  .card {
+    padding: 2rem;
+    width: auto;
+  }
+
+  .card__title {
+    padding-top: 0.5rem;
+    margin: 0rem;
+  }
+
+  .card__content {
+    margin-bottom: 2rem;
+  }
+}

@@ -1,0 +1,161 @@
+/*Mobile screens*/
+.home {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  box-sizing: border-box;
+}
+
+.home__content {
+  text-align: center;
+  margin: 1rem auto;
+  width: calc(100% - 2rem);
+  max-width: 100%;
+}
+
+.home__banner-wrapper {
+  overflow: hidden;
+  margin: 0 1rem 1rem 1rem;
+  height: 415px;
+}
+
+.home__banner {
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+}
+
+.home__text-content h1 {
+  font-size: 4vw;
+  margin: 0 0 0.5rem 0;
+  color: #000;
+}
+
+.home__text-content p {
+  font-size: 2vw;
+  color: #000;
+  margin: 0;
+}
+
+.home__buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin: 1rem 0 2rem 0;
+}
+
+.home__product-display {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.home__product-display img {
+  max-width: 100%;
+  margin-bottom: 0.5rem;
+}
+
+.home__product-display .text {
+  text-align: center;
+  color: #000;
+}
+
+.home__product-display-reversed {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.home__product-display-reversed img {
+  max-width: 100%;
+  margin-bottom: 0.5rem;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+
+.home__product-display-reversed .text {
+  text-align: center;
+  color: #000;
+}
+
+.text h2 {
+  font-size: 5vw;
+  text-align: left;
+  margin: 0 0 1rem 0;
+  color: #d96920;
+}
+
+.text p {
+  font-size: 2vw;
+  text-align: left;
+  margin: 0;
+}
+
+/* Larger screens */
+@media (min-width: 768px) {
+  .home__content {
+    width: 70%;
+  }
+
+  .home__banner-wrapper {
+    margin: 0 0rem 2rem 0rem;
+    height: auto;
+  }
+
+  .home__content h1 {
+    font-size: 2vw;
+  }
+
+  .home__content p {
+    font-size: 1.5vw;
+  }
+
+  .home__product-display {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .home__product-display img {
+    flex: 1;
+    width: 50%;
+  }
+
+  .home__product-display .text {
+    flex: 1;
+    text-align: left;
+    margin-left: 3rem;
+  }
+
+  .home__product-display-reversed {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .home__product-display-reversed img {
+    flex: 1;
+    width: 50%;
+  }
+
+  .home__product-display-reversed .text {
+    flex: 1;
+    text-align: left;
+    margin-left: 3rem;
+  }
+
+  .text h2 {
+    font-size: 2vw;
+    text-align: left;
+    margin: 0 0 1rem 0;
+  }
+
+  .text p {
+    font-size: 1vw;
+    text-align: left;
+  }
+}
