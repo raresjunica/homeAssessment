@@ -92,6 +92,33 @@
   text-align: left;
   margin: 0;
 }
+.home__info-boxes {
+  color: #000;
+}
+.home__info-boxes h1 {
+  font-size: 1.2rem;
+}
+
+.home__info-boxes-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+}
+
+.home__faq {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem 0;
+  background-color: #ecf0f1;
+  padding-bottom: 2rem;
+}
+
+.home__faq h1 {
+  font-size: 1.5rem;
+  color: #000;
+  margin: 2rem;
+}
 
 /* Larger screens */
 @media (min-width: 768px) {
@@ -157,5 +184,12 @@
   .text p {
     font-size: 1vw;
     text-align: left;
+  }
+
+  .home__info-boxes-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three items per row */
+    gap: 1rem;
+    margin: 2rem 0;
   }
 }

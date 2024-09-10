@@ -41,6 +41,9 @@ const Footer: React.FC = () => {
           </ul>
         </div>
       </div>
+      <div className="footer__bottom">
+        <p>Copyright © 2022 Codelalla</p>
+      </div>
     </footer>
   );
 };
