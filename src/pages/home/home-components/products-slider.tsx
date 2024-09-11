@@ -1,7 +1,8 @@
 import Slider from "react-slick";
+
+import "./ProductsSlider.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import "./ProductsSlider.css";
 
 import image1 from "../../../assets/products-slider/image1.png";
 import image2 from "../../../assets/products-slider/image2.png";
@@ -14,6 +15,7 @@ export default function ProductsSlider() {
       speed={500}
       slidesToShow={1}
       slidesToScroll={1}
+      dots
     >
       <div className="slider__product">
         <img src={image1} alt="Splash image1" />

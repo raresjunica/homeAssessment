@@ -1,0 +1,38 @@
+.members {
+  color: #000;
+  padding: 1rem;
+}
+
+.members h1 {
+  font-size: 1.5rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+/* Slick Carousel */
+.members-slider {
+  display: block;
+}
+
+/* Grid layout hidden by default */
+.members-container {
+  display: none;
+}
+
+/* Larger screens - Grid layout */
+@media (min-width: 768px) {
+  .members-slider {
+    display: none; /* Hide the slider on larger screens */
+  }
+
+  .members-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* Three items per row */
+    gap: 1rem;
+    margin: 2rem 0;
+  }
+
+  .members h1 {
+    font-size: 2rem;
+  }
+}

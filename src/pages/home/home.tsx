@@ -12,6 +12,7 @@ import scooters from "../../assets/home-images/scooters.png";
 import banner from "../../assets/home-images/banner.png";
 
 import "./Home.css";
+import Members from "./home-components/members";
 
 const Home: React.FC = () => {
   const [popupVisible, setPopupVisible] = React.useState(false);
@@ -120,6 +121,7 @@ const Home: React.FC = () => {
             venenatis erat suscipit nec.
           </p>
         </Card>
+        <Members />
       </div>
       <TestimonialBox />
       <Faq />
