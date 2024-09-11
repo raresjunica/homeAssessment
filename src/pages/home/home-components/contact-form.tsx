@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
-import "../../../styles/ContactForm.css";
-import Button from "../../../components/button";
+import "./ContactForm.css";
+import Button from "../../../components/button/button";
 import { getImage } from "../../../services/home-services";
 
 const formSchema = z.object({

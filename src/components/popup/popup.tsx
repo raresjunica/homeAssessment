@@ -1,5 +1,5 @@
 import React, { Dispatch, SetStateAction } from "react";
-import "../styles/Popup.css";
+import "./Popup.css";
 
 interface PopupProps {
   isVisible: boolean;

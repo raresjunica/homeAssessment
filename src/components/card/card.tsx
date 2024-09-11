@@ -1,6 +1,6 @@
 import React from "react";
-import "../styles/Card.css";
-import Button from "./button";
+import "./Card.css";
+import Button from "../button/button";
 
 interface CardProps {
   title: string;

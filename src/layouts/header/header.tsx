@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "../../styles/Header.css";
-import Button from "../../components/button";
+import Button from "../../components/button/button";
 import { LuAlignJustify, LuX } from "react-icons/lu";
 import logo from "../../assets/logos/splash.png";
 

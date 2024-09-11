@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import "../../../styles/TestimonialBox.css";
+import "./TestimonialBox.css";
 import leftQuote from "../../../assets/quotes/left-quote.png";
 import rightQuote from "../../../assets/quotes/right-quote.png";
 
