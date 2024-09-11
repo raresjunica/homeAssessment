@@ -118,11 +118,11 @@
     height: auto;
   }
 
-  .home__content h1 {
+  .home__text-content h1 {
     font-size: 2vw;
   }
 
-  .home__content p {
+  .home__text-content p {
     font-size: 1.5vw;
   }
 

@@ -35,7 +35,7 @@
 
 .testimonial__content p {
   margin: 0;
-  font-size: 0.7rem;
+  font-size: 0.6rem;
   color: #2c3e50;
   text-align: left;
 }
@@ -43,7 +43,7 @@
 .testimonial__author {
   display: block;
   margin-top: 0.5rem;
-  font-size: 0.8rem;
+  font-size: 0.6rem;
   color: #1a85ff;
   text-align: left;
 }
@@ -73,5 +73,13 @@
   .testimonial__content {
     padding: 2rem;
     text-align: left;
+  }
+
+  .testimonial__content p {
+    font-size: 1.2rem;
+  }
+
+  .testimonial__author {
+    font-size: 1.2rem;
   }
 }
