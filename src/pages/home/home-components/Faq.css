@@ -1,0 +1,14 @@
+/*Mobile screens*/
+.faq {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem 0;
+  background-color: #ecf0f1;
+  padding-bottom: 2rem;
+}
+
+.faq h1 {
+  font-size: 1.5rem;
+  color: #000;
+  margin: 2rem;
+}

@@ -1,14 +1,13 @@
 import React from "react";
 import Button from "../../components/button/button";
-import Accordion from "../../components/accordion/accordion";
 import Popup from "../../components/popup/popup";
-import InfoBox from "../../components/info-box/info-box";
 import Card from "../../components/card/card";
 import ContactForm from "./home-components/contact-form";
 import TestimonialBox from "./home-components/testimonial-box";
 import ProductsSlider from "./home-components/products-slider";
+import InfoBoxes from "./home-components/info-boxes";
+import Faq from "./home-components/faq";
 
-import miniature from "../../assets/logos/miniature.png";
 import scooters from "../../assets/home-images/scooters.png";
 import banner from "../../assets/home-images/banner.png";
 
@@ -100,36 +99,7 @@ const Home: React.FC = () => {
             </p>
           </div>
         </div>
-        <div className="home__info-boxes">
-          <h1>Our main features</h1>
-          <div className="home__info-boxes-container">
-            <InfoBox
-              image={miniature}
-              text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi consectetur aliquam urna. Pellentesque et ullamcorper ipsum. Morbi eget hendrerit purus, in tempor lectus."
-              isNew={false}
-            />
-            <InfoBox
-              image={miniature}
-              text="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-              isNew={false}
-            />
-            <InfoBox
-              image={miniature}
-              text="Morbi consectetur aliquam urna."
-              isNew={false}
-            />
-            <InfoBox
-              image={miniature}
-              text="Morbi consectetur aliquam urna."
-              isNew={false}
-            />
-            <InfoBox
-              image={miniature}
-              text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi consectetur aliquam urna. Pellentesque et ullamcorper ipsum. Morbi eget hendrerit purus, in tempor lectus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi consectetur aliquam urna."
-              isNew={true}
-            />
-          </div>
-        </div>
+        <InfoBoxes />
       </div>
       <div className="home__banner-wrapper">
         <img className="home__banner" src={banner} alt="Scooters banner" />
@@ -152,79 +122,7 @@ const Home: React.FC = () => {
         </Card>
       </div>
       <TestimonialBox />
-      <div className="home__faq">
-        <h1>FAQ</h1>
-        <Accordion
-          title="Lorem ipsum dolor sit amet, consectetur adipiscing elit?"
-          content={
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
-              consectetur aliquam urna. Pellentesque et ullamcorper ipsum. Morbi
-              eget hendrerit purus, in tempor lectus. Curabitur lorem magna,
-              efficitur et molestie ut, rutrum in nisi. Sed lobortis sapien sit
-              amet tempus commodo. Phasellus nec libero laoreet, finibus libero
-              rhoncus, pellentesque elit. Mauris facilisis commodo justo, eget
-              venenatis erat suscipit nec.
-            </p>
-          }
-        />
-        <Accordion
-          title="Lorem ipsum dolor sit amet, consectetur adipiscing elit?"
-          content={
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
-              consectetur aliquam urna. Pellentesque et ullamcorper ipsum. Morbi
-              eget hendrerit purus, in tempor lectus. Curabitur lorem magna,
-              efficitur et molestie ut, rutrum in nisi. Sed lobortis sapien sit
-              amet tempus commodo. Phasellus nec libero laoreet, finibus libero
-              rhoncus, pellentesque elit. Mauris facilisis commodo justo, eget
-              venenatis erat suscipit nec.
-            </p>
-          }
-        />
-        <Accordion
-          title="Lorem ipsum dolor sit amet, consectetur adipiscing elit?"
-          content={
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
-              consectetur aliquam urna. Pellentesque et ullamcorper ipsum. Morbi
-              eget hendrerit purus, in tempor lectus. Curabitur lorem magna,
-              efficitur et molestie ut, rutrum in nisi. Sed lobortis sapien sit
-              amet tempus commodo. Phasellus nec libero laoreet, finibus libero
-              rhoncus, pellentesque elit. Mauris facilisis commodo justo, eget
-              venenatis erat suscipit nec.
-            </p>
-          }
-        />
-        <Accordion
-          title="Lorem ipsum dolor sit amet, consectetur adipiscing elit?"
-          content={
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
-              consectetur aliquam urna. Pellentesque et ullamcorper ipsum. Morbi
-              eget hendrerit purus, in tempor lectus. Curabitur lorem magna,
-              efficitur et molestie ut, rutrum in nisi. Sed lobortis sapien sit
-              amet tempus commodo. Phasellus nec libero laoreet, finibus libero
-              rhoncus, pellentesque elit. Mauris facilisis commodo justo, eget
-              venenatis erat suscipit nec.
-            </p>
-          }
-        />
-        <Accordion
-          title="Lorem ipsum dolor sit amet, consectetur adipiscing elit?"
-          content={
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
-              consectetur aliquam urna. Pellentesque et ullamcorper ipsum. Morbi
-              eget hendrerit purus, in tempor lectus. Curabitur lorem magna,
-              efficitur et molestie ut, rutrum in nisi. Sed lobortis sapien sit
-              amet tempus commodo. Phasellus nec libero laoreet, finibus libero
-              rhoncus, pellentesque elit. Mauris facilisis commodo justo, eget
-              venenatis erat suscipit nec.
-            </p>
-          }
-        />
-      </div>
+      <Faq />
       <ContactForm />
       <Popup isVisible={popupVisible} onClose={setPopupVisible}>
         <p>
