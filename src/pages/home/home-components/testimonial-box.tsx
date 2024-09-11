@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
-import "../styles/TestimonialBox.css"; // Path to the CSS file
-import leftQuote from "../assets/quotes/left-quote.png"; // Add the path to your left quote image
-import rightQuote from "../assets/quotes/right-quote.png"; // Add the path to your right quote image
+import "../../../styles/TestimonialBox.css";
+import leftQuote from "../../../assets/quotes/left-quote.png";
+import rightQuote from "../../../assets/quotes/right-quote.png";
 
 const testimonials = [
   {
@@ -24,7 +24,7 @@ const TestimonialBox: React.FC = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentTestimonial((prev) => (prev + 1) % testimonials.length);
-    }, 10000); // Change text every 10 seconds
+    }, 10000);
 
     return () => clearInterval(interval);
   }, []);

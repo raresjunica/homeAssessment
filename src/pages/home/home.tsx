@@ -1,12 +1,12 @@
 import React from "react";
-import ProductsSlider from "../../components/products-slider";
+import ProductsSlider from "./home-components/products-slider";
 import Button from "../../components/button";
 import scooters from "../../assets/home-images/scooters.png";
 import banner from "../../assets/home-images/banner.png";
 import Card from "../../components/card";
-import ContactForm from "../../components/contact-form";
+import ContactForm from "./home-components/contact-form";
 import Popup from "../../components/popup";
-import TestimonialBox from "../../components/testimonial-box";
+import TestimonialBox from "./home-components/testimonial-box";
 import InfoBox from "../../components/info-box";
 import "../../styles/Home.css";
 

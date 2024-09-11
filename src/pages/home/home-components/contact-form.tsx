@@ -2,9 +2,9 @@ import React, { useState } from "react";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
-import "../styles/ContactForm.css";
-import Button from "./button";
-import { getImage } from "../services/home-services";
+import "../../../styles/ContactForm.css";
+import Button from "../../../components/button";
+import { getImage } from "../../../services/home-services";
 
 const formSchema = z.object({
   fullName: z.string().min(1, { message: "Full name is required" }),
